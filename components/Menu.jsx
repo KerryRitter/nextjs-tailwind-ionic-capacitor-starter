@@ -18,17 +18,17 @@ const pages = [
   {
     title: 'Feed',
     icon: flash,
-    url: '/tabs/feed',
+    url: '/app/tabs/feed',
   },
   {
     title: 'Lists',
     icon: list,
-    url: '/tabs/lists',
+    url: '/app/tabs/lists',
   },
   {
     title: 'Settings',
     icon: cog,
-    url: '/tabs/settings',
+    url: '/app/tabs/settings',
   },
 ];
 

@@ -12,22 +12,22 @@ const Tabs = () => {
   return (
     <IonTabs>
       <IonRouterOutlet>
-        <Route path="/tabs/feed" component={Home} exact={true} />
-        <Route path="/tabs/lists" component={Lists} exact={true} />
-        <Route path="/tabs/lists/:listId" component={ListDetail} exact={true} />
-        <Route path="/tabs/settings" component={Settings} exact={true} />
-        <Route path="/tabs" render={() => <Redirect to="/tabs/feed" />} exact={true} />
+        <Route path="/app/tabs/feed" component={Home} exact={true} />
+        <Route path="/app/tabs/lists" component={Lists} exact={true} />
+        <Route path="/app/tabs/lists/:listId" component={ListDetail} exact={true} />
+        <Route path="/app/tabs/settings" component={Settings} exact={true} />
+        <Route path="/app/tabs" render={() => <Redirect to="/app/tabs/feed" />} exact={true} />
       </IonRouterOutlet>
       <IonTabBar slot="bottom">
-        <IonTabButton tab="tab1" href="/tabs/feed">
+        <IonTabButton tab="tab1" href="/app/tabs/feed">
           <IonIcon icon={flash} />
           <IonLabel>Feed</IonLabel>
         </IonTabButton>
-        <IonTabButton tab="tab2" href="/tabs/lists">
+        <IonTabButton tab="tab2" href="/app/tabs/lists">
           <IonIcon icon={list} />
           <IonLabel>Lists</IonLabel>
         </IonTabButton>
-        <IonTabButton tab="tab3" href="/tabs/settings">
+        <IonTabButton tab="tab3" href="/app/tabs/settings">
           <IonIcon icon={cog} />
           <IonLabel>Settings</IonLabel>
         </IonTabButton>
